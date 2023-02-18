@@ -1,7 +1,7 @@
 {
   "name": "prisma-generator-laravel-generator-schema",
-  "description": "Provide a description about your generator",
-  "version": "1.0.0",
+  "description": "Generate schema files to be used by infyom:laravel-generator",
+  "version": "0.0.1",
   "main": "dist/generator.js",
   "license": "MIT",
   "bin": {
@@ -35,15 +35,17 @@
     "@semantic-release/git": "^10.0.1",
     "semantic-release": "^18.0.1"
   },
-  "homepage": "Link to homepage or github readme here",
+  "homepage": "https://github.com/paretohq/prisma-generator-laravel-generator-schema",
   "repository": {
     "type": "git",
-    "url": "Repo link here"
+    "url": "https://github.com/paretohq/prisma-generator-laravel-generator-schema.git"
   },
-  "author": "Your Name <Your Email>",
+  "author": "Mosaab Emam <mosaab.emam123@gmail.com>",
   "keywords": [
     "prisma",
-    "prisma2",
+    "infyom",
+    "laravel-generator",
+    "schema",
     "generator"
   ],
   "release": {
