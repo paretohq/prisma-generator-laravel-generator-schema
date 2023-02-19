@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/paretohq/prisma-generator-laravel-generator-schema/compare/v1.2.0...v1.3.0) (2023-02-19)
+
+
+### Features
+
+* **getValidations:** extend or override inferred validations ([d37b8ca](https://github.com/paretohq/prisma-generator-laravel-generator-schema/commit/d37b8caf62309f55923dbac9bc2b7397f039f846))
+
 # [1.2.0](https://github.com/paretohq/prisma-generator-laravel-generator-schema/compare/v1.1.0...v1.2.0) (2023-02-19)
 
 
