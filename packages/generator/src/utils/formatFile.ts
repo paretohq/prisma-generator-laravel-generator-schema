@@ -1,3 +1,4 @@
+import { logger } from '@prisma/sdk'
 import prettier from 'prettier'
 
 export const formatFile = (content: string): Promise<string> => {
@@ -15,7 +16,8 @@ export const formatFile = (content: string): Promise<string> => {
 
         res(formatted)
       } catch (error) {
-        rej(error)
+        logger.info('Error prettifying Json, saving unformatted.')
+        res(content)
       }
     })
   )
