@@ -1,38 +1,45 @@
 import { DMMF } from "@prisma/generator-helper";
+import { logger } from "@prisma/sdk";
+import { getDocumentationRules } from "./getDocumentationRules";
 
-export function getValidations(field: DMMF.Field): String {
-  const rules = [];
+export type Rules = {
+  [key: string]: Array<string>
+}
 
-  if (field.isRequired)
-    rules.push("required")
+function stringifyRule([key, value]: [string, Array<string>]): string {
+  let result = key;
+  if (value[0]) result += `:${value.join(',')}`
+  return result;
+}
 
-  // TODO: unique rules needs access to db name of model
+export function getValidations(field: DMMF.Field): string {
+  let rules: Rules = {};
 
-  if (field.type === "String")
-    rules.push("string")
+  const [override, documentation_rules] = getDocumentationRules(field.documentation);
 
-  if (field.type === "Float" || field.type === "Decimal")
-    rules.push("decimal")
+  if (override) return Object.entries(documentation_rules).map(stringifyRule).join("|")
 
-  if (field.type === "Boolean")
-    rules.push("boolean")
+  if (field.isRequired) rules['required'] = [];
 
-  if (field.name === "id")
-    rules.push("integer|min:1")
+  if (field.type === "String") rules['string'] = []
 
-  if (field.name === "email")
-    rules.push("email")
+  if (field.type === "Int" || field.type === "BigInt") rules['integer'] = []
 
-  if (field.name === "password")
-    rules.push("min:8")
+  if (field.type === "Float" || field.type === "Decimal") rules['decimal'] = []
 
-  // TODO: option in custom comment to set min,max,length rules
+  if (field.type === "Boolean") rules['boolean'] = []
 
-  // TODO: option to add url rule
+  if (field.name === "email") rules['email'] = []
+
+  if (field.name === "password") rules['min'] = ['8']
 
   // TODO: option in relationship fields to add exists rule
 
-  // TODO: option to override inferred rules entirely
+  if (field.documentation)
+    rules = {
+      ...rules,
+      ...documentation_rules
+    };
 
-  return rules.join("|");
+  return Object.entries(rules).map(stringifyRule).join("|")
 }
