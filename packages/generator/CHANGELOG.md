@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/paretohq/prisma-generator-laravel-generator-schema/compare/v1.0.0...v1.1.0) (2023-02-19)
+
+
+### Features
+
+* cleanup & basic json file with defaults ([561e6d7](https://github.com/paretohq/prisma-generator-laravel-generator-schema/commit/561e6d709f65946824273dab38e7a7722828a187))
+
 # 1.0.0 (2023-02-18)
 
 
