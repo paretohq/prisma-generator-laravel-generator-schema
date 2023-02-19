@@ -1,12 +1,12 @@
-import { genSchemaField } from '../helpers/genSchemaField'
+import { isSearchable } from "../helpers/isSearchable"
 import { getSampleDMMF } from './__fixtures__/getSampleDMMF'
 
-test('schema field generation', async () => {
+test('is searchable', async () => {
   const sampleDMMF = await getSampleDMMF()
 
   sampleDMMF.datamodel.models.forEach((model) => {
     model.fields.forEach(field => {
-      expect(genSchemaField(field)).toMatchSnapshot()
+      expect(isSearchable(field)).toMatchSnapshot()
     })
   })
 })

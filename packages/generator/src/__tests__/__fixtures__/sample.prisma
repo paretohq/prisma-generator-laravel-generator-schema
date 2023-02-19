@@ -8,28 +8,3 @@ model User {
   email String  @unique
   name  String?
 }
-
-enum NotificationType {
-  newPosts
-  newComments
-  newFollowers
-  reply
-  heartOnPost
-  heartOnComment
-  heartOnReply
-}
-
-enum Language {
-  Typescript
-  Javascript
-  Rust
-  Go
-  Python
-  Cpp
-}
-
-enum State {
-  Active
-  Pending
-  Banned
-}

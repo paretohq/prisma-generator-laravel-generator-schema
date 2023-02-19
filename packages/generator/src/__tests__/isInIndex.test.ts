@@ -1,12 +1,12 @@
-import { genSchemaField } from '../helpers/genSchemaField'
+import { isInIndex } from "../helpers/isInIndex"
 import { getSampleDMMF } from './__fixtures__/getSampleDMMF'
 
-test('schema field generation', async () => {
+test('is in index table', async () => {
   const sampleDMMF = await getSampleDMMF()
 
   sampleDMMF.datamodel.models.forEach((model) => {
     model.fields.forEach(field => {
-      expect(genSchemaField(field)).toMatchSnapshot()
+      expect(isInIndex(field)).toMatchSnapshot()
     })
   })
 })

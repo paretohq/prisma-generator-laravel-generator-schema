@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is in entity's page 1`] = `false`;
+
+exports[`is in entity's page 2`] = `true`;
+
+exports[`is in entity's page 3`] = `true`;

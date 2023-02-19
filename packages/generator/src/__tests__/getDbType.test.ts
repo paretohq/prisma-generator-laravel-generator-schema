@@ -1,12 +1,12 @@
-import { genSchemaField } from '../helpers/genSchemaField'
+import { getDbType } from '../helpers/getDbType'
 import { getSampleDMMF } from './__fixtures__/getSampleDMMF'
 
-test('schema field generation', async () => {
+test('get db type', async () => {
   const sampleDMMF = await getSampleDMMF()
 
   sampleDMMF.datamodel.models.forEach((model) => {
     model.fields.forEach(field => {
-      expect(genSchemaField(field)).toMatchSnapshot()
+      expect(getDbType(field)).toMatchSnapshot()
     })
   })
 })

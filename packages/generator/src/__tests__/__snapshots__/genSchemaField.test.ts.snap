@@ -1,46 +1,46 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`enum generation 1`] = `
+exports[`schema field generation 1`] = `
 Object {
   "dbType": "id",
-  "fillable": false,
-  "htmlType": "text",
+  "fillable": true,
+  "htmlType": "number",
   "inForm": false,
-  "inIndex": false,
+  "inIndex": true,
   "inView": false,
   "name": "id",
   "primary": true,
   "searchable": false,
-  "validations": "",
+  "validations": "required|integer|min:1",
 }
 `;
 
-exports[`enum generation 2`] = `
+exports[`schema field generation 2`] = `
 Object {
-  "dbType": "email",
-  "fillable": false,
-  "htmlType": "text",
-  "inForm": false,
-  "inIndex": false,
-  "inView": false,
+  "dbType": "string",
+  "fillable": true,
+  "htmlType": "email",
+  "inForm": true,
+  "inIndex": true,
+  "inView": true,
   "name": "email",
   "primary": false,
-  "searchable": false,
-  "validations": "",
+  "searchable": true,
+  "validations": "required|string|email",
 }
 `;
 
-exports[`enum generation 3`] = `
+exports[`schema field generation 3`] = `
 Object {
-  "dbType": "name",
-  "fillable": false,
+  "dbType": "string",
+  "fillable": true,
   "htmlType": "text",
-  "inForm": false,
-  "inIndex": false,
-  "inView": false,
+  "inForm": true,
+  "inIndex": true,
+  "inView": true,
   "name": "name",
   "primary": false,
-  "searchable": false,
-  "validations": "",
+  "searchable": true,
+  "validations": "string",
 }
 `;

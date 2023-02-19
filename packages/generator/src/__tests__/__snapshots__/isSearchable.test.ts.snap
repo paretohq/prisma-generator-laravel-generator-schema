@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is searchable 1`] = `false`;
+
+exports[`is searchable 2`] = `true`;
+
+exports[`is searchable 3`] = `true`;

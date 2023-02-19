@@ -1,28 +1,24 @@
 import { DMMF } from '@prisma/generator-helper';
-type SchemaField = {
-  name: string;
-  dbType: string;
-  htmlType: string;
-  validations: string;
-  searchable: boolean;
-  fillable: boolean;
-  primary: boolean;
-  inForm: boolean;
-  inIndex: boolean;
-  inView: boolean;
-}
+import { getDbType } from "./getDbType";
+import { getFieldName } from "./getFieldName";
+import { getHtmlType } from "./getHtmlType";
+import { getValidations } from "./getValidations";
+import { isFillable } from "./isFillable";
+import { isInForm } from "./isInForm";
+import { isInIndex } from "./isInIndex";
+import { isInView } from "./isInView";
+import { isPrimary } from "./isPrimary";
+import { isSearchable } from "./isSearchable";
 
-export function genSchemaField(field: DMMF.Field): SchemaField {
-  return {
-    name: field.name,
-    dbType: field.name,
-    htmlType: "text",
-    validations: "",
-    searchable: false,
-    fillable: false,
-    primary: field.isId,
-    inForm: false,
-    inIndex: false,
-    inView: false
-  };
-}
+export const genSchemaField = (field: DMMF.Field) => ({
+  name: getFieldName(field),
+  dbType: getDbType(field),
+  htmlType: getHtmlType(field),
+  validations: getValidations(field),
+  searchable: isSearchable(field),
+  fillable: isFillable(field),
+  primary: isPrimary(field),
+  inForm: isInForm(field),
+  inIndex: isInIndex(field),
+  inView: isInView(field)
+})

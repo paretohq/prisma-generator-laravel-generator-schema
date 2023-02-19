@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`is in form 1`] = `false`;
+
+exports[`is in form 2`] = `true`;
+
+exports[`is in form 3`] = `true`;
