@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`get validation rules 1`] = `"required|integer|min:1"`;
+exports[`get validation rules 1`] = `"required|integer"`;
 
 exports[`get validation rules 2`] = `"required|string|email"`;
 
