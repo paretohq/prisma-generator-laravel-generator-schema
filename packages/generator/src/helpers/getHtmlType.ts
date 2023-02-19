@@ -1,7 +1,24 @@
 import { DMMF } from "@prisma/generator-helper";
 
-type HtmlType = 'text' | 'email' | 'number' | 'date' | 'file' | 'password' | 'select' | 'radio' | 'checkbox' | 'textarea';
+export function getHtmlType(field: DMMF.Field): String {
+  // Infer html type from field name
+  if (field.name === 'email') return 'email';
+  if (field.name === 'password') return 'password';
 
-export function getHtmlType(field: DMMF.Field): HtmlType {
+  // Infer html type from field type
+  if (field.type === "String") return 'text';
+  if (field.type === "DateTime") return 'date';
+  if (field.type === "JSON") return 'textarea';
+  if (field.type === "Bytes") return 'file';
+  if (field.type === "Boolean") return 'checkbox';
+  if (
+    field.type === "Int" ||
+    field.type === "BigInt" ||
+    field.type === "Float" ||
+    field.type === "Decimal"
+  ) return 'number';
+
+  // TODO: infer type select from relationship fields
+
   return 'text';
 }
