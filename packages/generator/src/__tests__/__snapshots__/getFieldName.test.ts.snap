@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get field name 1`] = `"id"`;
+
+exports[`get field name 2`] = `"email"`;
+
+exports[`get field name 3`] = `"name"`;
