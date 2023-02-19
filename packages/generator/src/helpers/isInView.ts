@@ -1,5 +1,7 @@
 import { DMMF } from "@prisma/generator-helper";
 
 export function isInView(field: DMMF.Field): boolean {
-  return false;
+  if (field.name === "id") return false;
+
+  return true;
 }
