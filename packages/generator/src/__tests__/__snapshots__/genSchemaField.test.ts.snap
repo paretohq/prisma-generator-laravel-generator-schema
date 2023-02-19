@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enum generation 1`] = `
+Object {
+  "dbType": "id",
+  "fillable": false,
+  "htmlType": "text",
+  "inForm": false,
+  "inIndex": false,
+  "inView": false,
+  "name": "id",
+  "primary": true,
+  "searchable": false,
+  "validations": "",
+}
+`;
+
+exports[`enum generation 2`] = `
+Object {
+  "dbType": "email",
+  "fillable": false,
+  "htmlType": "text",
+  "inForm": false,
+  "inIndex": false,
+  "inView": false,
+  "name": "email",
+  "primary": false,
+  "searchable": false,
+  "validations": "",
+}
+`;
+
+exports[`enum generation 3`] = `
+Object {
+  "dbType": "name",
+  "fillable": false,
+  "htmlType": "text",
+  "inForm": false,
+  "inIndex": false,
+  "inView": false,
+  "name": "name",
+  "primary": false,
+  "searchable": false,
+  "validations": "",
+}
+`;
