@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1676825361829" clover="3.2.0">
+  <project timestamp="1676825361830" name="All files">
+    <metrics statements="90" coveredstatements="66" conditionals="60" coveredconditionals="33" methods="16" coveredmethods="13" elements="166" coveredelements="112" complexity="0" loc="90" ncloc="90" packages="1" files="12" classes="12"/>
+    <file name="genSchemaField.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/genSchemaField.ts">
+      <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="10" count="1" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+      <line num="13" count="3" type="stmt"/>
+    </file>
+    <file name="getDbType.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/getDbType.ts">
+      <metrics statements="12" coveredstatements="3" conditionals="12" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="5" count="6" type="cond" truecount="3" falsecount="0"/>
+      <line num="8" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="11" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="12" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="13" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="16" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="20" count="0" type="stmt"/>
+    </file>
+    <file name="getDocumentationRules.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/getDocumentationRules.ts">
+      <metrics statements="18" coveredstatements="6" conditionals="10" coveredconditionals="6" methods="4" coveredmethods="1"/>
+      <line num="4" count="0" type="stmt"/>
+      <line num="5" count="0" type="stmt"/>
+      <line num="8" count="2" type="stmt"/>
+      <line num="9" count="6" type="stmt"/>
+      <line num="10" count="6" type="cond" truecount="6" falsecount="2"/>
+      <line num="11" count="6" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="15" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
+      <line num="17" count="0" type="stmt"/>
+      <line num="20" count="0" type="cond" truecount="0" falsecount="1"/>
+      <line num="21" count="0" type="stmt"/>
+      <line num="24" count="6" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+    </file>
+    <file name="getFieldName.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/getFieldName.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="6" type="stmt"/>
+    </file>
+    <file name="getHtmlType.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/getHtmlType.ts">
+      <metrics statements="11" coveredstatements="10" conditionals="12" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="5" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="4" type="cond" truecount="0" falsecount="1"/>
+      <line num="9" count="4" type="cond" truecount="1" falsecount="0"/>
+      <line num="10" count="2" type="cond" truecount="0" falsecount="1"/>
+      <line num="11" count="2" type="cond" truecount="0" falsecount="1"/>
+      <line num="12" count="2" type="cond" truecount="0" falsecount="1"/>
+      <line num="13" count="2" type="cond" truecount="0" falsecount="1"/>
+      <line num="14" count="2" type="cond" truecount="1" falsecount="0"/>
+      <line num="19" count="2" type="stmt"/>
+      <line num="23" count="0" type="stmt"/>
+    </file>
+    <file name="getValidations.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/getValidations.ts">
+      <metrics statements="18" coveredstatements="17" conditionals="14" coveredconditionals="8" methods="2" coveredmethods="2"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="10" count="12" type="stmt"/>
+      <line num="11" count="12" type="cond" truecount="0" falsecount="1"/>
+      <line num="12" count="12" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="16" count="6" type="stmt"/>
+      <line num="18" count="6" type="stmt"/>
+      <line num="20" count="6" type="cond" truecount="0" falsecount="1"/>
+      <line num="22" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="24" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="26" count="6" type="cond" truecount="3" falsecount="0"/>
+      <line num="28" count="6" type="cond" truecount="2" falsecount="1"/>
+      <line num="30" count="6" type="cond" truecount="0" falsecount="1"/>
+      <line num="32" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="34" count="6" type="cond" truecount="0" falsecount="1"/>
+      <line num="38" count="6" type="cond" truecount="0" falsecount="1"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="44" count="6" type="stmt"/>
+    </file>
+    <file name="isFillable.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isFillable.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+    </file>
+    <file name="isInForm.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isInForm.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="4" type="stmt"/>
+    </file>
+    <file name="isInIndex.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isInIndex.ts">
+      <metrics statements="4" coveredstatements="3" conditionals="5" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="0" falsecount="1"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="11" count="6" type="stmt"/>
+    </file>
+    <file name="isInView.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isInView.ts">
+      <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="6" count="4" type="stmt"/>
+    </file>
+    <file name="isPrimary.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isPrimary.ts">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="3" type="stmt"/>
+    </file>
+    <file name="isSearchable.ts" path="/mnt/Local Disk/code/prisma-generator-laravel-generator-schema/packages/generator/src/helpers/isSearchable.ts">
+      <metrics statements="4" coveredstatements="4" conditionals="5" coveredconditionals="5" methods="1" coveredmethods="1"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+    </file>
+  </project>
+</coverage>

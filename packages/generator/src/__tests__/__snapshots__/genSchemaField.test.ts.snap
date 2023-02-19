@@ -11,7 +11,7 @@ Object {
   "name": "id",
   "primary": true,
   "searchable": false,
-  "validations": "required|integer|min:1",
+  "validations": "required|integer",
 }
 `;
 
