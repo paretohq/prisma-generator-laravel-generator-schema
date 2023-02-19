@@ -2,7 +2,7 @@
 
 exports[`schema field generation 1`] = `
 Object {
-  "dbType": "id",
+  "dbType": "string",
   "fillable": true,
   "htmlType": "number",
   "inForm": false,
@@ -17,7 +17,7 @@ Object {
 
 exports[`schema field generation 2`] = `
 Object {
-  "dbType": "email",
+  "dbType": "string",
   "fillable": true,
   "htmlType": "email",
   "inForm": false,
@@ -32,7 +32,7 @@ Object {
 
 exports[`schema field generation 3`] = `
 Object {
-  "dbType": "name",
+  "dbType": "string",
   "fillable": true,
   "htmlType": "text",
   "inForm": false,

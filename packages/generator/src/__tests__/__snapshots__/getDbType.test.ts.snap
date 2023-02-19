@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get db type 1`] = `"string"`;
+
+exports[`get db type 2`] = `"string"`;
+
+exports[`get db type 3`] = `"string"`;
