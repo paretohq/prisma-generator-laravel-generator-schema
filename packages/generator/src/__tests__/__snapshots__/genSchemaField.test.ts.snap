@@ -2,7 +2,7 @@
 
 exports[`schema field generation 1`] = `
 Object {
-  "dbType": "string",
+  "dbType": "id",
   "fillable": true,
   "htmlType": "number",
   "inForm": false,
@@ -11,7 +11,7 @@ Object {
   "name": "id",
   "primary": true,
   "searchable": false,
-  "validations": "",
+  "validations": "required|integer|min:1",
 }
 `;
 
@@ -25,8 +25,8 @@ Object {
   "inView": false,
   "name": "email",
   "primary": false,
-  "searchable": false,
-  "validations": "",
+  "searchable": true,
+  "validations": "required|string|email",
 }
 `;
 
@@ -40,7 +40,7 @@ Object {
   "inView": false,
   "name": "name",
   "primary": false,
-  "searchable": false,
-  "validations": "",
+  "searchable": true,
+  "validations": "string",
 }
 `;
